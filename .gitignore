@@ -13,3 +13,5 @@ __generated__
 
 # Environment
 .env
+
+.DS_Store

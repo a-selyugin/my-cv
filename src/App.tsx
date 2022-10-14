@@ -1,5 +1,10 @@
+import { Header } from '@/components/Header';
+
 export const App = (): JSX.Element => (
-  <div className='test'>
+  <>
+    <Header />
+    <div className='test'>
     Testasdas
-  </div>
+    </div>
+  </>
 );
