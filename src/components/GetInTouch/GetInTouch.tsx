@@ -12,11 +12,13 @@ import TelegramSVG from '@/assets/icons/telegram.svg';
 import './GetInTouch.pcss';
 
 export const GetInTouch: FC = (): JSX.Element => (
-  <>
-    <p>
+  <div className='get-in-touch'>
+    <h4
+      className='get-in-touch__heading'>
       Get in touch
-    </p>
-    <hr />
+    </h4>
+
+    <hr className='my-2 w-64 dark:bg-stone-400' />
     <ul
       className='link-list'>
 
@@ -57,5 +59,5 @@ export const GetInTouch: FC = (): JSX.Element => (
       </GetInTouchListItem>
 
     </ul>
-  </>
+  </div>
 );
