@@ -18,7 +18,8 @@ export const GetInTouch: FC = (): JSX.Element => (
       Get in touch
     </h4>
 
-    <hr className='my-2 w-64 dark:bg-stone-400' />
+    <hr className='get-in-touch__divide' />
+
     <ul
       className='link-list'>
 
