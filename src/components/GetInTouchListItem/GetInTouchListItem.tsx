@@ -15,12 +15,12 @@ export const GetInTouchListItem = ({
 }: GetInTouchListItemProps): JSX.Element => (
   <li>
     <a
-      className='get-in-touch-item'
+      className='get-in-touch__item'
       target='_blank'
       rel='noreferrer'
       href={targetLink}>
       {children}
-      {listText}
+      <span>{listText}</span>
     </a>
   </li>
 );
