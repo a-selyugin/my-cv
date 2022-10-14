@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { GetInTouch } from '../GetInTouch/GetInTouch';
+
 import Artem from '@/assets/images/Artem.jpg';
 
 import './AboutMe.pcss';
@@ -12,6 +14,7 @@ export const AboutMe: FC = (): JSX.Element => (
         className='my-photo'
         src={Artem}
         alt='Me' />
+      <GetInTouch />
     </div>
     <div>
       <p>Hello, I am Artem, and I’m looking for a job as a front-end developer. </p>
