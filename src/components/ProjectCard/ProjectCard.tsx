@@ -1,12 +1,29 @@
-import { FC } from 'react';
-
 import './ProjectCard.pcss';
 
-export const ProjectCard: FC = (): JSX.Element => (
+interface ProjectCardProps {
+  imgSource: string;
+  projectName: string;
+  deployLink: string;
+}
+
+export const ProjectCard = ({
+  imgSource,
+  projectName,
+  deployLink,
+}: ProjectCardProps): JSX.Element => (
   <div
     className='project-card'>
-    <h3 className="heading-3">
-        THIS IS A CARD
-    </h3>
+    <img
+      className='project-card__image'
+      src={imgSource}
+      alt={projectName}
+    />
+    <a
+      className='project-card__link'
+      href={deployLink}
+      target='_blank'
+      rel='noreferrer'>
+      {projectName}
+    </a>
   </div>
 );
