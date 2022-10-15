@@ -1,7 +1,7 @@
 import './ProjectCard.pcss';
 
 import InfoSVG from '@/assets/icons/about.svg';
-import GitHubSVG from '@/assets/icons/github-white.svg';
+import GitHubSVG from '@/assets/icons/github.svg';
 import DeploySVG from '@/assets/icons/web.svg';
 
 interface ProjectCardProps {
@@ -30,19 +30,25 @@ export const ProjectCard = ({
             className='links-container__icon'
             title="Go to project deploy"
             href={deployLink}>
-            <DeploySVG />
+            <DeploySVG
+              fill='white'
+            />
           </a>
           <a
             className='links-container__icon'
             title="Check project's source code"
             href={gitHubLink}>
-            <GitHubSVG />
+            <GitHubSVG
+              fill='white'
+            />
           </a>
           <button
             className='links-container__icon'
             title="See the information about project"
             type='button'>
-            <InfoSVG />
+            <InfoSVG
+              fill='white'
+            />
           </button>
         </div>
       </div>
