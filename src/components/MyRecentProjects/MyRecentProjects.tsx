@@ -17,7 +17,7 @@ export const MyRecentProjects: FC = (): JSX.Element => (
         MY RECENT PROJECTS
       </h3>
       <div
-        className='flex flex-wrap gap-20'>
+        className='projects-container'>
         <ProjectCard
           imgSource={Shelter}
           projectName='Pet shelter page'
