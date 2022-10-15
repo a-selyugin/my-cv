@@ -18,7 +18,7 @@ export const Footer: FC = (): JSX.Element => (
         className='svg-fill'
       >
         <GitHubSVG
-          fill='red'
+          fill='white'
         />
       </a>
       <a
@@ -28,8 +28,8 @@ export const Footer: FC = (): JSX.Element => (
         className='svg-fill'
       >
         <LinkedinSVG
-          fill='red'
-          stroke='white'/>
+          fill='white'
+        />
       </a>
       <a
         href="/"
@@ -37,7 +37,9 @@ export const Footer: FC = (): JSX.Element => (
         rel='noreferrer'
         className='svg-fill'
       >
-        <TelegramSVG />
+        <TelegramSVG
+          fill='white'
+        />
       </a>
       <a
         href="/"
@@ -45,7 +47,9 @@ export const Footer: FC = (): JSX.Element => (
         rel='noreferrer'
         className='svg-fill'
       >
-        <DiscordSVG />
+        <DiscordSVG
+          fill='white'
+        />
       </a>
       <a
         href="/"
@@ -53,7 +57,9 @@ export const Footer: FC = (): JSX.Element => (
         rel='noreferrer'
         className='svg-fill'
       >
-        <MailSVG />
+        <MailSVG
+          fill='white'
+        />
       </a>
     </section>
   </header>
