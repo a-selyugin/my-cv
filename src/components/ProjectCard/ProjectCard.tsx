@@ -26,13 +26,22 @@ export const ProjectCard = ({
       />
       <div className='project-card__overlay'>
         <div className='links-container'>
-          <a href={deployLink}>
+          <a
+            className='links-container__icon'
+            title="Go to project deploy"
+            href={deployLink}>
             <DeploySVG />
           </a>
-          <a href={gitHubLink}>
+          <a
+            className='links-container__icon'
+            title="Check project's source code"
+            href={gitHubLink}>
             <GitHubSVG />
           </a>
-          <button type='button'>
+          <button
+            className='links-container__icon'
+            title="See the information about project"
+            type='button'>
             <InfoSVG />
           </button>
         </div>
