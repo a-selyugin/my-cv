@@ -28,7 +28,7 @@ export const MyRecentProjects: FC = (): JSX.Element => (
           imgSource={RsLang}
           projectName='Interactive English textbook'
           deployLink='http://rslang-team75.pages.dev/'
-          gitHubLink='/'
+          gitHubLink='https://github.com/RS-Lang-Team75/rslang'
         />
         <ProjectCard
           imgSource={OnlineStore}
@@ -40,7 +40,7 @@ export const MyRecentProjects: FC = (): JSX.Element => (
           imgSource={VirtualKeyboard}
           projectName='Virtual keyboard'
           deployLink='https://a-selyugin.github.io/virtual-keyboard/'
-          gitHubLink='/'
+          gitHubLink='https://github.com/a-selyugin/virtual-keyboard/tree/virtual-keyboard'
         />
       </div>
     </div>
