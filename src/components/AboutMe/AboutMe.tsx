@@ -9,7 +9,7 @@ import './AboutMe.pcss';
 export const AboutMe: FC = (): JSX.Element => (
   <section
     className='about-me'>
-    <div className='wrapper'>
+    <div className='wrapper-flex'>
       <div>
         <img
           className='my-photo'
