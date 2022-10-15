@@ -26,37 +26,49 @@ export const GetInTouch: FC = (): JSX.Element => (
       <GetInTouchListItem
         targetLink='tel: +90 506 698 13 79'
         listText='+90 506 698 13 79'>
-        <PhoneSVG />
+        <PhoneSVG
+          fill='black'
+        />
       </GetInTouchListItem>
 
       <GetInTouchListItem
         targetLink='https://t.me/showmeartem'
         listText='@showmeartem'>
-        <TelegramSVG />
+        <TelegramSVG
+          fill='black'
+        />
       </GetInTouchListItem>
 
       <GetInTouchListItem
         targetLink='https://discordapp.com/users/695337819555758092'
         listText='@showmeartem'>
-        <DiscordSVG />
+        <DiscordSVG
+          fill='black'
+        />
       </GetInTouchListItem>
 
       <GetInTouchListItem
         targetLink='https://github.com/a-selyugin'
         listText='a-selyugin'>
-        <GitHubSVG />
+        <GitHubSVG
+          fill='black'
+        />
       </GetInTouchListItem>
 
       <GetInTouchListItem
         targetLink='mailto: selyuginai@gmail.com'
         listText='selyuginai@gmail.com'>
-        <MailSVG />
+        <MailSVG
+          fill='black'
+        />
       </GetInTouchListItem>
 
       <GetInTouchListItem
         targetLink='https://www.linkedin.com/in/artem-selyuigin-61a824142/'
         listText='Artem Selyugin'>
-        <LinkedinSVG />
+        <LinkedinSVG
+          fill='black'
+        />
       </GetInTouchListItem>
 
     </ul>
