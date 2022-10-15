@@ -18,7 +18,7 @@ export const Footer: FC = (): JSX.Element => (
       <div
         className='flex justify-center items-center'>
         <a
-          href="/"
+          href="https://github.com/a-selyugin"
           target='_blank'
           rel='noreferrer'
           className='svg-fill'
@@ -28,7 +28,7 @@ export const Footer: FC = (): JSX.Element => (
           />
         </a>
         <a
-          href="/"
+          href="https://www.linkedin.com/in/artem-selyuigin-61a824142/"
           target='_blank'
           rel='noreferrer'
           className='svg-fill'
@@ -38,7 +38,7 @@ export const Footer: FC = (): JSX.Element => (
           />
         </a>
         <a
-          href="/"
+          href="https://t.me/showmeartem"
           target='_blank'
           rel='noreferrer'
           className='svg-fill'
@@ -48,7 +48,7 @@ export const Footer: FC = (): JSX.Element => (
           />
         </a>
         <a
-          href="/"
+          href="https://discordapp.com/users/695337819555758092"
           target='_blank'
           rel='noreferrer'
           className='svg-fill'
@@ -58,7 +58,7 @@ export const Footer: FC = (): JSX.Element => (
           />
         </a>
         <a
-          href="/"
+          href="mailto: selyuginai@gmail.com"
           target='_blank'
           rel='noreferrer'
           className='svg-fill'
