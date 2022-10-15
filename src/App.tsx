@@ -1,5 +1,6 @@
 import { AboutMe } from './components/AboutMe';
 import { Education } from './components/Education';
+import { Footer } from './components/Footer';
 import { MyRecentProjects } from './components/MyRecentProjects';
 import { Skills } from './components/Skills';
 
@@ -12,5 +13,6 @@ export const App = (): JSX.Element => (
     <MyRecentProjects />
     <Education />
     <Skills />
+    <Footer />
   </>
 );
