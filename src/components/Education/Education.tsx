@@ -6,6 +6,7 @@ import './Education.pcss';
 
 export const Education: FC = (): JSX.Element => (
   <section
+    id='education'
     className='education'>
     <div className='wrapper-flex'>
       <div className="education__container">

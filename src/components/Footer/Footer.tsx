@@ -9,7 +9,9 @@ import TelegramSVG from '@/assets/icons/telegram.svg';
 import './Footer.pcss';
 
 export const Footer: FC = (): JSX.Element => (
-  <header className='footer'>
+  <footer
+    id='contact'
+    className='footer'>
     <section className='wrapper footer__wrapper'>
       <div
         className='footer__text'>
@@ -69,5 +71,5 @@ export const Footer: FC = (): JSX.Element => (
         </a>
       </div>
     </section>
-  </header>
+  </footer>
 );

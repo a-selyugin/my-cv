@@ -4,6 +4,7 @@ import './Skills.pcss';
 
 export const Skills: FC = (): JSX.Element => (
   <section
+    id='skills'
     className='skills'>
     <div className='wrapper-flex'>
       <div className="skills__container">

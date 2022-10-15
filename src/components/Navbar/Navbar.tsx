@@ -10,8 +10,20 @@ export const Navbar: FC = (): JSX.Element => (
       className='drop-down'>
           Experience
     </li>
-    <li>Education</li>
-    <li>Skills</li>
-    <li>Contact</li>
+    <li>
+      <a href="#education">
+        Education
+      </a>
+    </li>
+    <li>
+      <a href="#skills">
+        Skills
+      </a>
+    </li>
+    <li>
+      <a href="#contact">
+        Contact
+      </a>
+    </li>
   </ul>
 );
