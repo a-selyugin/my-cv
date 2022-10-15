@@ -1,9 +1,23 @@
 .project-card {
-  @apply w-[500px] rounded-lg duration-500;
+  @apply w-[500px] rounded-xl duration-500;
 }
 
 .project-card__image {
-  @apply block hover:shadow-xl duration-300;
+  @apply w-[500px] h-[265px] rounded-xl hover:shadow-xl duration-300 overflow-hidden;
+
+  &:hover {
+    & .project-card__overlay {
+      @apply -mt-[265px] duration-300;
+    }
+  }
+}
+
+.project-card__overlay {
+  @apply w-[500px] h-[265px] bg-black opacity-80 duration-300;
+}
+
+.links-container {
+  @apply flex justify-center items-center gap-10 h-full;
 }
 
 .project-card__link{
