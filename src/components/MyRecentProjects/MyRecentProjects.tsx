@@ -22,21 +22,25 @@ export const MyRecentProjects: FC = (): JSX.Element => (
           imgSource={Shelter}
           projectName='Pet shelter page'
           deployLink='https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/shelter/pages/main/index.html'
+          gitHubLink='/'
         />
         <ProjectCard
           imgSource={RsLang}
           projectName='Interactive English textbook'
           deployLink='http://rslang-team75.pages.dev/'
+          gitHubLink='/'
         />
         <ProjectCard
           imgSource={OnlineStore}
           projectName='Online store page'
           deployLink='https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/online-store/'
+          gitHubLink='/'
         />
         <ProjectCard
           imgSource={VirtualKeyboard}
           projectName='Virtual keyboard'
           deployLink='https://a-selyugin.github.io/virtual-keyboard/'
+          gitHubLink='/'
         />
       </div>
     </div>
