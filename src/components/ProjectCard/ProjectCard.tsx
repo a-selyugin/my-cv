@@ -1,37 +1,41 @@
 import './ProjectCard.pcss';
 
+import { ReactNode } from 'react';
+
 import InfoSVG from '@/assets/icons/about.svg';
 import GitHubSVG from '@/assets/icons/github.svg';
 import DeploySVG from '@/assets/icons/web.svg';
 
-interface ProjectCardProps {
+export interface ProjectCardContent {
   imgSource: string;
   projectName: string;
   deployLink: string;
   githubLink: string;
-  moreInfoClick: (projectName: string) => void;
+  info?: ReactNode;
+}
+
+interface ProjectCardProps {
+  proj: ProjectCardContent;
+  moreInfoClick: (proj: ProjectCardContent) => void;
 }
 
 export const ProjectCard = ({
-  imgSource,
-  projectName,
-  deployLink,
-  githubLink,
+  proj,
   moreInfoClick,
 }: ProjectCardProps): JSX.Element => (
   <div
     className='project-card'>
     <div className='project-card__image'>
       <img
-        src={imgSource}
-        alt={projectName}
+        src={proj.imgSource}
+        alt={proj.projectName}
       />
       <div className='project-card__overlay'>
         <div className='links-container'>
           <a
             className='links-container__icon'
             title="Go to project deploy"
-            href={deployLink}>
+            href={proj.deployLink}>
             <DeploySVG
               fill='white'
             />
@@ -39,7 +43,7 @@ export const ProjectCard = ({
           <a
             className='links-container__icon'
             title="Check project's source code"
-            href={githubLink}>
+            href={proj.githubLink}>
             <GitHubSVG
               fill='white'
             />
@@ -48,7 +52,7 @@ export const ProjectCard = ({
             className='links-container__icon'
             title="See the information about project"
             type='button'
-            onClick={() => moreInfoClick(projectName)}
+            onClick={() => moreInfoClick(proj)}
           >
             <InfoSVG
               fill='white'
@@ -59,10 +63,10 @@ export const ProjectCard = ({
     </div>
     <a
       className='project-card__link'
-      href={deployLink}
+      href={proj.deployLink}
       target='_blank'
       rel='noreferrer'>
-      {projectName}
+      {proj.projectName}
     </a>
   </div>
 );
