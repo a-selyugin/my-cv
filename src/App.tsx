@@ -9,10 +9,12 @@ import { Header } from '@/components/Header';
 export const App = (): JSX.Element => (
   <>
     <Header />
-    <AboutMe />
-    <MyRecentProjects />
-    <Education />
-    <Skills />
-    <Footer />
+    <main>
+      <AboutMe />
+      <MyRecentProjects />
+      <Education />
+      <Skills />
+      <Footer />
+    </main>
   </>
 );
