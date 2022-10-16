@@ -18,6 +18,11 @@ export const VirtualKeyboardInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
+      <span className='text-red-600'>STACK:</span> HTML/CSS/JS, SASS, Webpack, Eslint, OOP.
+    </p>
+    <p
+      className='modal-content__text'
+    >
       Full task description <a
         className='main-link'
         href='https://github.com/rolling-scopes-school/tasks/blob/master/tasks/virtual-keyboard/virtual-keyboard-en.md'
