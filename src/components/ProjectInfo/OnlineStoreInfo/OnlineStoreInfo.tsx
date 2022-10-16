@@ -18,7 +18,7 @@ export const OnlineStoreInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
-      Basic module testing wa also implemented.
+      Basic module testing was also implemented.
     </p>
     <p
       className='modal-content__text'
