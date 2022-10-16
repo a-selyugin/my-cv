@@ -1,0 +1,1 @@
+export { ShelterInfo } from './ShelterInfo';
