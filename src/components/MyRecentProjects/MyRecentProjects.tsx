@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-// import { ModalWindow } from '../ModalWindow/ModalWindow';
 import { ProjectCard, ProjectCardContent } from '../ProjectCard/ProjectCard';
 import { OnlineStoreInfo } from '../ProjectInfo/OnlineStoreInfo/OnlineStoreInfo';
 import { RsLangInfo } from '../ProjectInfo/RsLangInfo/RsLangInfo';
@@ -17,15 +16,8 @@ export const MyRecentProjects = ({
   returnModalContent,
 }: MyRecentProjectsProps): JSX.Element => {
 
-  // const [modalActive, setModalActive] = useState<boolean>(false);
-  // const [modalContent, setModelContent] = useState<ReactNode>(null);
-
   const moreInfo = (proj: ProjectCardContent) => {
     returnModalContent(proj.info);
-    // setModelContent(proj.info);
-    // if (proj.info) {
-    //   setModalActive(true);
-    // }
   };
 
   const projects = {
@@ -62,41 +54,33 @@ export const MyRecentProjects = ({
   const { shelter, rslang, onlineStore, virtualKeyboard } = projects;
 
   return (
-    <>
-      <section
-        id='experience'
-        className='my-recent-projects'>
-        <div className='wrapper'>
-          <h3 className="heading-3">
+    <section
+      id='experience'
+      className='my-recent-projects'>
+      <div className='wrapper'>
+        <h3 className="heading-3">
           MY RECENT PROJECTS
-          </h3>
-          <div
-            className='projects-container'>
-            <ProjectCard
-              proj={shelter}
-              moreInfoClick={moreInfo}
-            />
-            <ProjectCard
-              proj={rslang}
-              moreInfoClick={moreInfo}
-            />
-            <ProjectCard
-              proj={onlineStore}
-              moreInfoClick={moreInfo}
-            />
-            <ProjectCard
-              proj={virtualKeyboard}
-              moreInfoClick={moreInfo}
-            />
-          </div>
+        </h3>
+        <div
+          className='projects-container'>
+          <ProjectCard
+            proj={shelter}
+            moreInfoClick={moreInfo}
+          />
+          <ProjectCard
+            proj={rslang}
+            moreInfoClick={moreInfo}
+          />
+          <ProjectCard
+            proj={onlineStore}
+            moreInfoClick={moreInfo}
+          />
+          <ProjectCard
+            proj={virtualKeyboard}
+            moreInfoClick={moreInfo}
+          />
         </div>
-      </section>
-      {/* <ModalWindow
-        active={modalActive}
-        setActive={setModalActive}
-      >
-        {modalContent}
-      </ModalWindow> */}
-    </>
+      </div>
+    </section>
   );
 };
