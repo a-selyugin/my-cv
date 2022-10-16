@@ -7,11 +7,6 @@ import { RsLangInfo } from '../ProjectInfo/RsLangInfo/RsLangInfo';
 import { ShelterInfo } from '../ProjectInfo/ShelterInfo/ShelterInfo';
 import { VirtualKeyboardInfo } from '../ProjectInfo/VirtualKeyboardInfo/VirtualKeyboardInfo';
 
-import OnlineStore from '@/assets/images/online-store.png';
-import RsLang from '@/assets/images/rslang.png';
-import Shelter from '@/assets/images/shelter.png';
-import VirtualKeyboard from '@/assets/images/virtual-keyboard.png';
-
 import './MyRecentProjects.pcss';
 
 export const MyRecentProjects: FC = (): JSX.Element => {
@@ -28,28 +23,28 @@ export const MyRecentProjects: FC = (): JSX.Element => {
 
   const projects = {
     shelter: {
-      imgSource: Shelter,
+      imgSource: 'shelter-image',
       projectName: 'Pet shelter page',
       deployLink: 'https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/shelter/pages/main/index.html',
       githubLink: '/',
       info: <ShelterInfo />,
     },
     rslang: {
-      imgSource: RsLang,
+      imgSource: 'rslang-image',
       projectName: 'Interactive English textbook',
       deployLink: 'http://rslang-team75.pages.dev/',
       githubLink: 'https://github.com/RS-Lang-Team75/rslang',
       info: <RsLangInfo />,
     },
     onlineStore: {
-      imgSource: OnlineStore,
+      imgSource: 'online-store-image',
       projectName: 'Online store page',
       deployLink: 'https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/online-store/',
       githubLink: '/',
       info: <OnlineStoreInfo />,
     },
     virtualKeyboard: {
-      imgSource: VirtualKeyboard,
+      imgSource: 'virtual-keyboard-image',
       projectName: 'Virtual keyboard',
       deployLink: 'https://a-selyugin.github.io/virtual-keyboard/',
       githubLink: 'https://github.com/a-selyugin/virtual-keyboard/tree/virtual-keyboard',

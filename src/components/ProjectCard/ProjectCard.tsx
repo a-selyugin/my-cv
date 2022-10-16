@@ -25,11 +25,9 @@ export const ProjectCard = ({
 }: ProjectCardProps): JSX.Element => (
   <div
     className='project-card'>
-    <div className='project-card__image'>
-      <img
-        src={proj.imgSource}
-        alt={proj.projectName}
-      />
+    <div
+      className={`project-card__image ${proj.imgSource}`}
+    >
       <div className='project-card__overlay'>
         <div className='links-container'>
           <a

@@ -3,18 +3,17 @@
 }
 
 .project-card__image {
-  @apply w-[500px] h-[265px] bg-local bg-center bg-no-repeat bg-cover rounded-xl border-stone-400 border-solid border hover:shadow-xl duration-300 overflow-hidden md:w-full md:max-w-[500px] md:m-auto md:h-[calc(width)];
-  background-image: url('@/assets/images/shelter.png');
+  @apply w-[500px] h-[265px] bg-local bg-top bg-no-repeat bg-auto rounded-xl border-stone-400 border-solid border hover:shadow-xl duration-300 overflow-hidden md:w-full md:max-w-[500px] md:m-auto md:h-[calc(width)];
 
   &:hover {
     & .project-card__overlay {
-      @apply -mt-[265px] duration-300;
+      @apply -mt-[0] duration-300;
     }
   }
 }
 
 .project-card__overlay {
-  @apply w-[500px] h-[265px] bg-black opacity-80 duration-300 md:w-full md:max-w-[500px];
+  @apply w-[500px] h-[265px] mt-[265px] bg-black opacity-80 duration-300 md:w-full md:max-w-[500px];
 }
 
 .links-container {
