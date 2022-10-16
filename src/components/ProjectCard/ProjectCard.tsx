@@ -8,14 +8,16 @@ interface ProjectCardProps {
   imgSource: string;
   projectName: string;
   deployLink: string;
-  gitHubLink: string;
+  githubLink: string;
+  moreInfoClick: (projectName: string) => void;
 }
 
 export const ProjectCard = ({
   imgSource,
   projectName,
   deployLink,
-  gitHubLink,
+  githubLink,
+  moreInfoClick,
 }: ProjectCardProps): JSX.Element => (
   <div
     className='project-card'>
@@ -37,7 +39,7 @@ export const ProjectCard = ({
           <a
             className='links-container__icon'
             title="Check project's source code"
-            href={gitHubLink}>
+            href={githubLink}>
             <GitHubSVG
               fill='white'
             />
@@ -45,7 +47,9 @@ export const ProjectCard = ({
           <button
             className='links-container__icon'
             title="See the information about project"
-            type='button'>
+            type='button'
+            onClick={() => moreInfoClick(projectName)}
+          >
             <InfoSVG
               fill='white'
             />
