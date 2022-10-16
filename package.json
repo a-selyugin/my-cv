@@ -1,10 +1,11 @@
 {
-  "name": "bundlers-boilerplates",
-  "version": "0.3.0",
-  "description": "Webpack react+typescript boilerplate",
+  "name": "my-cv",
+  "version": "0.1.0",
+  "description": "My CV",
   "main": "src/index.tsx",
-  "author": "Alexey-Koran",
+  "author": "Artem Selyugin",
   "license": "ISC",
+  "homepage": "https://a-selyugin.github.io/my-cv",
   "bugs": {
     "url": "https://github.com/alexey-koran/bundlers-boilerplates/issues"
   },
@@ -25,7 +26,9 @@
     "fix": "run-s prettier:format lint:fix",
     "fix-staged": "lint-staged",
     "svgo": "cross-env svgo $FILE",
-    "svgo-all": "cross-env svgo -r -f src"
+    "svgo-all": "cross-env svgo -r -f src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -60,6 +63,7 @@
     "eslint-plugin-react": "^7.31.6",
     "eslint-plugin-react-hooks": "^4.6.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
