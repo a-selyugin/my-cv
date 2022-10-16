@@ -1,1 +1,15 @@
+.modal-overlay {
+  @apply w-screen h-screen bg-black bg-opacity-0 fixed top-0 left-0 flex items-center justify-center duration-300 pointer-events-none;
+}
 
+.modal-overlay_active {
+  @apply bg-opacity-60 pointer-events-auto;
+}
+
+.modal-window {
+  @apply p-10 rounded-3xl bg-white scale-0 duration-300;
+}
+
+.modal-window_active {
+  @apply scale-100;
+}

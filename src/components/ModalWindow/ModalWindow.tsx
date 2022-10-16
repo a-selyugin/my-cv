@@ -1,14 +1,35 @@
-import { FC } from 'react';
-
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/interactive-supports-focus */
+import { Dispatch, ReactNode, SetStateAction } from 'react';
 import './ModalWindow.pcss';
 
-export const ModalWindow: FC = (): JSX.Element => (
+interface ModalWindowProps {
+  active: boolean;
+  setActive: Dispatch<SetStateAction<boolean>>;
+  children?: ReactNode;
+}
+
+export const ModalWindow = ({
+  active,
+  setActive,
+  children,
+}: ModalWindowProps): JSX.Element => (
   <div
-    className='modal-overlay'>
-    <div className='modal-window'>
-      <h3 className="heading-3">
-        MY RECENT PROJECTS
-      </h3>
+    className={active ? 'modal-overlay modal-overlay_active' : 'modal-overlay'}
+    role='button'
+    onClick={() => setActive(false)}
+    onKeyUp={key => {
+      if (key.code === 'Escape') {
+        setActive(false);
+      }
+    }}
+  >
+    <div
+      className={active ? 'modal-window modal-window_active' : 'modal-window'}
+      onClick={e => e.stopPropagation()}
+    >
+      {children}
     </div>
   </div>
 );
