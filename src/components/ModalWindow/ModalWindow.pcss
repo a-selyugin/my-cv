@@ -1,5 +1,5 @@
 .modal-overlay {
-  @apply w-screen h-screen bg-black bg-opacity-0 fixed top-0 left-0 flex items-center justify-center duration-300 pointer-events-none;
+  @apply w-screen h-full bg-black bg-opacity-0 fixed top-0 left-0 flex items-center justify-center duration-300 pointer-events-none z-10 overflow-auto;
 }
 
 .modal-overlay_active {
@@ -7,7 +7,7 @@
 }
 
 .modal-window {
-  @apply px-10 pt-10 pb-4 rounded-3xl mx-60 bg-white scale-0 duration-300 cursor-default md:mx-5 md:my-5;
+  @apply px-10 pt-10 pb-4 rounded-3xl mx-60 bg-white scale-0 duration-300 cursor-default lg:mx-5 md:my-5 z-20 overflow-scroll;
 }
 
 .modal-window_active {
