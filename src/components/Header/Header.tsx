@@ -6,7 +6,7 @@ import './Header.pcss';
 
 export const Header: FC = (): JSX.Element => (
   <header className='header'>
-    <section className='wrapper-flex items-center'>
+    <section className='header-wrapper'>
 
       <a href='/' className="header__logo">
         Artem Selyugin
