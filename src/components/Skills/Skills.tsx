@@ -27,7 +27,7 @@ export const Skills: FC = (): JSX.Element => (
           <li>Figma</li>
         </ul>
       </div>
-      <div className="education__container">
+      <div className="skills__container">
         <h3 className="heading-3">
           LANGUAGES
         </h3>
