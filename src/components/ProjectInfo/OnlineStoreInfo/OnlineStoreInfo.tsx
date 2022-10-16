@@ -18,6 +18,11 @@ export const OnlineStoreInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
+      Basic module testing wa also implemented.
+    </p>
+    <p
+      className='modal-content__text'
+    >
       <span className='text-red-600'>STACK:</span> TypeScript, SASS, JEST, Webpack, Eslint.
     </p>
     <p
