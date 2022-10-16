@@ -19,7 +19,7 @@ export const ShelterInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
-      <span className='text-red-600'>STACK:</span> HTML/CSS/JS, SASS, Pixel-perfect, Webpack, Eslint.
+      <span className='text-red-600'>STACK:</span> HTML/CSS/JS, SASS, Pixel-perfect.
     </p>
     <p
       className='modal-content__text'
