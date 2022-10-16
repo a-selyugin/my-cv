@@ -6,9 +6,10 @@ export const Navbar: FC = (): JSX.Element => (
 
   <ul
     className='header__links'>
-    <li
-      className='drop-down'>
-          Experience
+    <li>
+      <a href="#experience">
+        Experience
+      </a>
     </li>
     <li>
       <a href="#education">
@@ -24,6 +25,7 @@ export const Navbar: FC = (): JSX.Element => (
       <a href="#contact">
         Contact
       </a>
+
     </li>
   </ul>
 );

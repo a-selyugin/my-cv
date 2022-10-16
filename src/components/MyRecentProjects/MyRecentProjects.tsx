@@ -57,6 +57,7 @@ export const MyRecentProjects: FC = (): JSX.Element => {
   return (
     <>
       <section
+        id='experience'
         className='my-recent-projects'>
         <div className='wrapper'>
           <h3 className="heading-3">
