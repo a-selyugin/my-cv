@@ -30,6 +30,17 @@ export const ModalWindow = ({
       onClick={e => e.stopPropagation()}
     >
       {children}
+      <div
+        className='modal-window__button-container'
+      >
+        <button
+          className='modal-window__button'
+          onClick={() => setActive(false)}
+          type='button'
+        >
+        CLOSE
+        </button>
+      </div>
     </div>
   </div>
 );

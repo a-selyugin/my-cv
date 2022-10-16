@@ -7,9 +7,23 @@
 }
 
 .modal-window {
-  @apply p-10 rounded-3xl mx-60 bg-white scale-0 duration-300 cursor-default md:mx-5 md:my-5;
+  @apply px-10 pt-10 pb-4 rounded-3xl mx-60 bg-white scale-0 duration-300 cursor-default md:mx-5 md:my-5;
 }
 
 .modal-window_active {
   @apply scale-100;
 }
+
+.modal-window__button-container {
+  @apply flex justify-center;
+
+  & .modal-window__button {
+    @apply px-10 py-2 rounded-full bg-red-600 text-white font-bold duration-300;
+
+    &:hover {
+      @apply shadow-xl bg-red-900 -translate-y-1;
+    }
+  }
+}
+
+
