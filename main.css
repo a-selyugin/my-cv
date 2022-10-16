@@ -1,3 +1,4 @@
+
 .link-list .get-in-touch__item {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -323,15 +324,19 @@
 
     left: 0px;
 
+    z-index: 10;
+
     display: flex;
 
-    height: 100vh;
+    height: 100%;
 
     width: 100vw;
 
     align-items: center;
 
     justify-content: center;
+
+    overflow: auto;
 
     background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 
@@ -349,6 +354,8 @@
 
 .modal-window {
 
+    z-index: 20;
+
     margin-left: 15rem;
 
     margin-right: 15rem;
@@ -360,6 +367,8 @@
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 
     cursor: default;
+
+    overflow: scroll;
 
     border-radius: 1.5rem;
 
@@ -382,13 +391,19 @@
 
     .modal-window {
 
-        margin-left: 1.25rem;
-
-        margin-right: 1.25rem;
-
         margin-top: 1.25rem;
 
         margin-bottom: 1.25rem
+    }
+}
+
+@media (max-width: 992px) {
+
+    .modal-window {
+
+        margin-left: 1.25rem;
+
+        margin-right: 1.25rem
     }
 }
 
@@ -1267,6 +1282,9 @@ video {
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .items-center {
   align-items: center;
