@@ -31,6 +31,11 @@ export const RsLangInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
+      <span className='text-red-600'>STACK:</span> React, TypeScript, RESTful API, Tailwind.
+    </p>
+    <p
+      className='modal-content__text'
+    >
       Full task description <a
         className='main-link'
         href='https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-2/rs-lang/rslang.md'
