@@ -1,1 +1,0 @@
-export { RsLangInfo } from './RsLangInfo';

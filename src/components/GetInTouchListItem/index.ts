@@ -1,1 +1,0 @@
-export { GetInTouchListItem } from './GetInTouchListItem';
