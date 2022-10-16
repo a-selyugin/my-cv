@@ -2,6 +2,8 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 import { Dispatch, ReactNode, SetStateAction } from 'react';
+
+import { useScrollLock } from '@/hooks/useScrollLock/useScrollLock';
 import './ModalWindow.pcss';
 
 interface ModalWindowProps {
@@ -14,33 +16,45 @@ export const ModalWindow = ({
   active,
   setActive,
   children,
-}: ModalWindowProps): JSX.Element => (
-  <div
-    className={active ? 'modal-overlay modal-overlay_active' : 'modal-overlay'}
-    role='button'
-    onClick={() => setActive(false)}
-    onKeyUp={key => {
-      if (key.code === 'Escape') {
-        setActive(false);
-      }
-    }}
-  >
+}: ModalWindowProps): JSX.Element => {
+
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  if (active) {
+    lockScroll();
+  }
+  else {
+    unlockScroll();
+  }
+
+  return (
     <div
-      className={active ? 'modal-window modal-window_active' : 'modal-window'}
-      onClick={e => e.stopPropagation()}
+      className={active ? 'modal-overlay modal-overlay_active' : 'modal-overlay'}
+      role='button'
+      onClick={() => setActive(false)}
+      onKeyUp={key => {
+        if (key.code === 'Escape') {
+          setActive(false);
+        }
+      }}
     >
-      {children}
       <div
-        className='modal-window__button-container'
+        className={active ? 'modal-window modal-window_active' : 'modal-window'}
+        onClick={e => e.stopPropagation()}
       >
-        <button
-          className='modal-window__button'
-          onClick={() => setActive(false)}
-          type='button'
+        {children}
+        <div
+          className='modal-window__button-container'
         >
+          <button
+            className='modal-window__button'
+            onClick={() => setActive(false)}
+            type='button'
+          >
         CLOSE
-        </button>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};

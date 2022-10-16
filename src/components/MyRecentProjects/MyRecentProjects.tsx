@@ -1,6 +1,6 @@
-import { FC, ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 
-import { ModalWindow } from '../ModalWindow/ModalWindow';
+// import { ModalWindow } from '../ModalWindow/ModalWindow';
 import { ProjectCard, ProjectCardContent } from '../ProjectCard/ProjectCard';
 import { OnlineStoreInfo } from '../ProjectInfo/OnlineStoreInfo/OnlineStoreInfo';
 import { RsLangInfo } from '../ProjectInfo/RsLangInfo/RsLangInfo';
@@ -9,16 +9,23 @@ import { VirtualKeyboardInfo } from '../ProjectInfo/VirtualKeyboardInfo/VirtualK
 
 import './MyRecentProjects.pcss';
 
-export const MyRecentProjects: FC = (): JSX.Element => {
+interface MyRecentProjectsProps {
+  returnModalContent: (content: ReactNode) => void;
+}
 
-  const [modalActive, setModalActive] = useState<boolean>(false);
-  const [modalContent, setModelContent] = useState<ReactNode>(null);
+export const MyRecentProjects = ({
+  returnModalContent,
+}: MyRecentProjectsProps): JSX.Element => {
+
+  // const [modalActive, setModalActive] = useState<boolean>(false);
+  // const [modalContent, setModelContent] = useState<ReactNode>(null);
 
   const moreInfo = (proj: ProjectCardContent) => {
-    setModelContent(proj.info);
-    if (proj.info) {
-      setModalActive(true);
-    }
+    returnModalContent(proj.info);
+    // setModelContent(proj.info);
+    // if (proj.info) {
+    //   setModalActive(true);
+    // }
   };
 
   const projects = {
@@ -84,12 +91,12 @@ export const MyRecentProjects: FC = (): JSX.Element => {
           </div>
         </div>
       </section>
-      <ModalWindow
+      {/* <ModalWindow
         active={modalActive}
         setActive={setModalActive}
       >
         {modalContent}
-      </ModalWindow>
+      </ModalWindow> */}
     </>
   );
 };
