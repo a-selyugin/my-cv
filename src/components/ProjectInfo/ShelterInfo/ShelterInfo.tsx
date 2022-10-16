@@ -19,7 +19,7 @@ export const ShelterInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
-      You can check full task description <a
+      Full task description <a
         className='main-link'
         href='https://github.com/rolling-scopes-school/tasks/blob/master/stage1/stream1/shelter/README.md'
         target='_blank'
