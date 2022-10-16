@@ -1,7 +1,11 @@
-import { FC, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 
 import { ModalWindow } from '../ModalWindow/ModalWindow';
-import { ProjectCard } from '../ProjectCard/ProjectCard';
+import { ProjectCard, ProjectCardContent } from '../ProjectCard/ProjectCard';
+import { OnlineStoreInfo } from '../ProjectInfo/OnlineStoreInfo/OnlineStoreInfo';
+import { RsLangInfo } from '../ProjectInfo/RsLangInfo/RsLangInfo';
+import { ShelterInfo } from '../ProjectInfo/ShelterInfo/ShelterInfo';
+import { VirtualKeyboardInfo } from '../ProjectInfo/VirtualKeyboardInfo/VirtualKeyboardInfo';
 
 import OnlineStore from '@/assets/images/online-store.png';
 import RsLang from '@/assets/images/rslang.png';
@@ -13,9 +17,13 @@ import './MyRecentProjects.pcss';
 export const MyRecentProjects: FC = (): JSX.Element => {
 
   const [modalActive, setModalActive] = useState<boolean>(false);
+  const [modalContent, setModelContent] = useState<ReactNode>(null);
 
-  const moreInfo = (projName: string) => {
-    console.log(projName);
+  const moreInfo = (proj: ProjectCardContent) => {
+    setModelContent(proj.info);
+    if (proj.info) {
+      setModalActive(true);
+    }
   };
 
   const projects = {
@@ -24,24 +32,28 @@ export const MyRecentProjects: FC = (): JSX.Element => {
       projectName: 'Pet shelter page',
       deployLink: 'https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/shelter/pages/main/index.html',
       githubLink: '/',
+      info: <ShelterInfo />,
     },
     rslang: {
       imgSource: RsLang,
       projectName: 'Interactive English textbook',
       deployLink: 'http://rslang-team75.pages.dev/',
       githubLink: 'https://github.com/RS-Lang-Team75/rslang',
+      info: <RsLangInfo />,
     },
     onlineStore: {
       imgSource: OnlineStore,
       projectName: 'Online store page',
       deployLink: 'https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/online-store/',
       githubLink: '/',
+      info: <OnlineStoreInfo />,
     },
     virtualKeyboard: {
       imgSource: VirtualKeyboard,
       projectName: 'Virtual keyboard',
       deployLink: 'https://a-selyugin.github.io/virtual-keyboard/',
       githubLink: 'https://github.com/a-selyugin/virtual-keyboard/tree/virtual-keyboard',
+      info: <VirtualKeyboardInfo />,
     },
   };
 
@@ -58,31 +70,19 @@ export const MyRecentProjects: FC = (): JSX.Element => {
           <div
             className='projects-container'>
             <ProjectCard
-              imgSource={shelter.imgSource}
-              projectName={shelter.projectName}
-              deployLink={shelter.deployLink}
-              githubLink={shelter.githubLink}
+              proj={shelter}
               moreInfoClick={moreInfo}
             />
             <ProjectCard
-              imgSource={rslang.imgSource}
-              projectName={rslang.projectName}
-              deployLink={rslang.deployLink}
-              githubLink={rslang.githubLink}
+              proj={rslang}
               moreInfoClick={moreInfo}
             />
             <ProjectCard
-              imgSource={onlineStore.imgSource}
-              projectName={onlineStore.projectName}
-              deployLink={onlineStore.deployLink}
-              githubLink={onlineStore.githubLink}
+              proj={onlineStore}
               moreInfoClick={moreInfo}
             />
             <ProjectCard
-              imgSource={virtualKeyboard.imgSource}
-              projectName={virtualKeyboard.projectName}
-              deployLink={virtualKeyboard.deployLink}
-              githubLink={virtualKeyboard.githubLink}
+              proj={virtualKeyboard}
               moreInfoClick={moreInfo}
             />
           </div>
@@ -92,7 +92,7 @@ export const MyRecentProjects: FC = (): JSX.Element => {
         active={modalActive}
         setActive={setModalActive}
       >
-      THIS IS CONTENT
+        {modalContent}
       </ModalWindow>
     </>
   );
