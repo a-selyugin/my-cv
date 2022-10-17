@@ -2,12 +2,11 @@ import { FC, ReactNode, useState } from 'react';
 
 import './MainPage.pcss';
 
-import { AboutMe } from '../AboutMe';
-import { Education } from '../Education';
-import { Footer } from '../Footer';
-import { ModalWindow } from '../ModalWindow/ModalWindow';
-import { MyRecentProjects } from '../MyRecentProjects';
-import { Skills } from '../Skills';
+import { AboutMe } from '../../components/AboutMe/index';
+import { Education } from '../../components/Education/index';
+import { ModalWindow } from '../../components/ModalWindow/ModalWindow';
+import { MyRecentProjects } from '../../components/MyRecentProjects/index';
+import { Skills } from '../../components/Skills/index';
 
 export const MainPage: FC = (): JSX.Element => {
 
@@ -31,7 +30,6 @@ export const MainPage: FC = (): JSX.Element => {
       />
       <Education />
       <Skills />
-      <Footer />
       <ModalWindow
         active={modalActive}
         setActive={setModalActive}
