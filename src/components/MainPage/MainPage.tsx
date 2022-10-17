@@ -23,7 +23,9 @@ export const MainPage: FC = (): JSX.Element => {
 
   return (
     <main>
-      <AboutMe />
+      <AboutMe
+        returnModalContent={putContentIntoModal}
+      />
       <MyRecentProjects
         returnModalContent={putContentIntoModal}
       />
