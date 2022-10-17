@@ -1,20 +1,16 @@
-import { ReactNode } from 'react';
-
 import { ProjectCard, ProjectCardContent } from '../ProjectCard/ProjectCard';
 import { OnlineStoreInfo } from '../ProjectInfo/OnlineStoreInfo/OnlineStoreInfo';
 import { RsLangInfo } from '../ProjectInfo/RsLangInfo/RsLangInfo';
 import { ShelterInfo } from '../ProjectInfo/ShelterInfo/ShelterInfo';
 import { VirtualKeyboardInfo } from '../ProjectInfo/VirtualKeyboardInfo/VirtualKeyboardInfo';
 
-import './MyRecentProjects.pcss';
+import { ReturnModalContentProps } from '@/types/interfaces';
 
-interface MyRecentProjectsProps {
-  returnModalContent: (content: ReactNode) => void;
-}
+import './MyRecentProjects.pcss';
 
 export const MyRecentProjects = ({
   returnModalContent,
-}: MyRecentProjectsProps): JSX.Element => {
+}: ReturnModalContentProps): JSX.Element => {
 
   const moreInfo = (proj: ProjectCardContent) => {
     returnModalContent(proj.info);
