@@ -22,6 +22,7 @@ export const Navbar: FC<NavbarProps> = ({
           className='header__link-wrapper'
         >
           Experience
+          <span className='rotating-marker' />
         </div>
         <div className="header__submenu_content header__link-wrapper">
           <ul>

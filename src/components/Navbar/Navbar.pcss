@@ -34,12 +34,24 @@
   @apply flex relative;
   
   & .header__submenu_content {
-    @apply w-full py-1 bg-white rounded-sm invisible absolute top-full left-0 duration-300 opacity-0;
+    @apply w-full py-1 bg-white rounded-md border border-stone-400 invisible absolute top-full left-0 duration-300 opacity-0;
+  }
+
+  & .rotating-marker {
+    @apply absolute right-0 top-0 px-2 duration-300;
+
+    &:after {
+      content: "▲";
+    }
   }
 
   &:hover{
     & .header__submenu_content {
       @apply visible opacity-100;
+    }
+
+    & .rotating-marker {
+      @apply rotate-180;
     }
   }
 }
