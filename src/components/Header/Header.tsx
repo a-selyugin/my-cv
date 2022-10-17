@@ -4,16 +4,29 @@ import { Navbar } from '../Navbar/Navbar';
 
 import './Header.pcss';
 
-export const Header: FC = (): JSX.Element => (
+interface HeaderProps {
+  selectMain: (isMainSelected: boolean) => void;
+}
+
+export const Header: FC<HeaderProps> = ({
+  selectMain,
+}): JSX.Element => (
   <header className='header'>
     <section className='header-wrapper'>
 
-      <a href='/' className="header__logo">
+      <button
+        type='button'
+        onClick={() => selectMain(true)}
+        className="header__logo">
         Artem Selyugin
-      </a>
+      </button>
 
-      <Navbar />
+      <Navbar
+        goToMain={() => selectMain(true)}
+        escapeMain={() => selectMain(false)}
+      />
 
     </section>
   </header>
+
 );

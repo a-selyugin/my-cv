@@ -1,8 +1,47 @@
 
 .header__links_desktop {
-  @apply  text-lg flex gap-10 md:hidden;
+  @apply w-[500px] text-lg flex md:hidden;
 }
 
 .header__links_mobile {
   @apply hidden md:block;
 }
+
+.header__link {
+  @apply text-center;
+}
+
+.header__link-wrapper {
+  @apply flex-grow flex justify-center;
+}
+
+.link-underline {
+  @apply duration-300 bg-no-repeat border-b-0;
+
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000);
+
+  &:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%
+  }
+}
+
+.header__submenu {
+
+  @apply flex relative;
+  
+  & .header__submenu_content {
+    @apply w-full py-1 bg-white rounded-sm invisible absolute top-full left-0 duration-300 opacity-0;
+  }
+
+  &:hover{
+    & .header__submenu_content {
+      @apply visible opacity-100;
+    }
+  }
+}
+
+
