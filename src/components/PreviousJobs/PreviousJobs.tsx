@@ -1,10 +1,8 @@
-import { ReturnModalContentProps } from '@/types/interfaces';
+import { FC } from 'react';
 
 import './PreviousJobs.pcss';
 
-export const PreviousJobs = ({
-  returnModalContent,
-}:ReturnModalContentProps): JSX.Element => (
+export const PreviousJobs: FC = (): JSX.Element => (
   <div>
     Previous Jobs
   </div>
