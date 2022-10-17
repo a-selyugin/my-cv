@@ -28,5 +28,11 @@ export const Navbar: FC = (): JSX.Element => (
         </a>
       </li>
     </ul>
+
+    <div
+      className='header__links_mobile'
+    >
+      Burger
+    </div>
   </nav>
 );
