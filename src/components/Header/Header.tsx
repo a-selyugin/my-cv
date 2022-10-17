@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { FC } from 'react';
 
 import { Navbar } from '../Navbar/Navbar';
@@ -8,9 +10,13 @@ export const Header: FC = (): JSX.Element => (
   <header className='header'>
     <section className='header-wrapper'>
 
-      <a href='/' className="header__logo">
+      <Link
+        key='logo-link'
+        className="header__logo"
+        to='/'
+      >
         Artem Selyugin
-      </a>
+      </Link>
 
       <Navbar />
 
