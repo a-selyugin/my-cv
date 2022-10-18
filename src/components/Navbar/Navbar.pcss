@@ -50,17 +50,20 @@
     @apply duration-300;
   }
 
-  &:hover{
-    @apply cursor-default;
-
-    & .header__submenu_content {
-      @apply visible opacity-100;
-    }
-
-    & .rotating-marker {
-      @apply rotate-180;
+  & .header__submenu-heading {
+    &:hover{
+      @apply cursor-default;
+  
+      & .header__submenu_content {
+        @apply visible opacity-100;
+      }
+  
+      & .rotating-marker {
+        @apply rotate-180;
+      }
     }
   }
+  
 }
 
 .burger-menu-icon {

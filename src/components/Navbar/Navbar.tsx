@@ -25,7 +25,10 @@ export const Navbar: FC<NavbarProps> = ({
   }
 
   const menuClick = (isGoToMain: boolean) => {
-    setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      setIsMenuOpen(!isMenuOpen);
+    }
+
     if (isGoToMain) {
       goToMain();
     } else {
@@ -44,35 +47,35 @@ export const Navbar: FC<NavbarProps> = ({
           className='header__submenu header__link-wrapper'
         >
           <div
-            className='header__link-wrapper'
+            className='header__link-wrapper header__submenu-heading'
           >
           Experience
             <span className='rotating-marker'>▲</span>
-          </div>
-          <div className="header__submenu_content header__link-wrapper">
-            <ul>
-              <li
-                className='header__link-wrapper'
-              >
-                <a
-                  className='link-underline'
-                  onClick={() => menuClick(false)}
-                  href="#jobs"
+            <div className="header__submenu_content header__link-wrapper">
+              <ul>
+                <li
+                  className='header__link-wrapper'
                 >
+                  <a
+                    className='link-underline'
+                    onClick={() => menuClick(false)}
+                    href="#jobs"
+                  >
               Jobs
-                </a>
-              </li>
-              <li
-                className='header__link-wrapper'
-              >
-                <a
-                  className='link-underline'
-                  onClick={() => menuClick(true)}
-                  href="#experience">
+                  </a>
+                </li>
+                <li
+                  className='header__link-wrapper'
+                >
+                  <a
+                    className='link-underline'
+                    onClick={() => menuClick(true)}
+                    href="#experience">
                   Recent projects
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
         <li
