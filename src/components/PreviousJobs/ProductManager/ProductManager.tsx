@@ -32,7 +32,7 @@ export const ProductManager: FC = (): JSX.Element => (
           Creating of new products and features concept
         </li>
         <li>
-          Sales support, meeting participations witch clients on pre-sale stage.
+          Sales support, meeting participation witch clients on pre-sale stage.
         </li>
         <li>
           Technical meetings participation on behalf of company.
