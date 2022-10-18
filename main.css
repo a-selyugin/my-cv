@@ -177,7 +177,6 @@
     }
 }
 
-
 .about-me {
 
     display: flex;
@@ -693,6 +692,68 @@
 
     margin-bottom: 0.5rem
 }
+.jobs {
+  margin-bottom: 4rem;
+}
+
+.jobs__heading {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+@media (max-width: 992px) {
+
+  .jobs__heading {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.jobs__heading {
+  letter-spacing: 0.1rem;
+}
+
+.jobs__subheading {
+  margin-bottom: 1.5rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.jobs__underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.jobs__list {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+@media (max-width: 992px) {
+
+  .jobs__list {
+    margin-bottom: 2rem;
+  }
+}
+
+.jobs__list li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
 
 .nav-container {
 
@@ -857,19 +918,19 @@
   transition-duration: 300ms
 }
 
-.header__submenu:hover {
+.header__submenu .header__submenu-heading:hover {
 
   cursor: default
 }
 
-.header__submenu:hover .header__submenu_content {
+.header__submenu .header__submenu-heading:hover .header__submenu_content {
 
   visibility: visible;
 
   opacity: 1
 }
 
-.header__submenu:hover .rotating-marker {
+.header__submenu .header__submenu-heading:hover .rotating-marker {
 
   --tw-rotate: 180deg;
 
