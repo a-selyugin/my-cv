@@ -13,7 +13,9 @@ export const MyRecentProjects = ({
 }: ReturnModalContentProps): JSX.Element => {
 
   const moreInfo = (proj: ProjectCardContent) => {
-    returnModalContent(proj.info);
+    if (returnModalContent) {
+      returnModalContent(proj.info);
+    }
   };
 
   const projects = {
