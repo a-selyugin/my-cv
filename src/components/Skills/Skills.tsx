@@ -35,7 +35,7 @@ export const Skills: FC = (): JSX.Element => (
           className='skills__list'
         >
           <li>Russian - native</li>
-          <li>English - upper intermidiate+</li>
+          <li>English - proficient</li>
         </ul>
       </div>
     </div>
