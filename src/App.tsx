@@ -16,13 +16,16 @@ export const App = (): JSX.Element => {
 
   return (
 
-    <>
+    <div
+      className='body-container'
+    >
       <Header
         selectMain={selectMain}
       />
       {showMain && <MainPage />}
       {!showMain && <PreviousPositionsPage />}
       <Footer />
-    </>
+
+    </div>
   );
 };
