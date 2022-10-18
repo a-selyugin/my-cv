@@ -14,6 +14,15 @@ export const Navbar: FC<NavbarProps> = ({
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
+  const menuClick = (isGoToMain: boolean) => {
+    setIsMenuOpen(!isMenuOpen);
+    if (isGoToMain) {
+      goToMain();
+    } else {
+      escapeMain();
+    }
+  };
+
   return (
 
     <nav
@@ -37,7 +46,7 @@ export const Navbar: FC<NavbarProps> = ({
               >
                 <a
                   className='link-underline'
-                  onClick={escapeMain}
+                  onClick={() => menuClick(false)}
                   href="#jobs"
                 >
               Jobs
@@ -48,7 +57,7 @@ export const Navbar: FC<NavbarProps> = ({
               >
                 <a
                   className='link-underline'
-                  onClick={goToMain}
+                  onClick={() => menuClick(true)}
                   href="#experience">
                   Recent projects
                 </a>
@@ -61,7 +70,7 @@ export const Navbar: FC<NavbarProps> = ({
         >
           <a
             className='link-underline'
-            onClick={goToMain}
+            onClick={() => menuClick(true)}
             href="#education">
           Education
           </a>
@@ -71,7 +80,7 @@ export const Navbar: FC<NavbarProps> = ({
         >
           <a
             className='link-underline'
-            onClick={goToMain}
+            onClick={() => menuClick(true)}
             href="#skills">
           Skills
           </a>
@@ -81,7 +90,7 @@ export const Navbar: FC<NavbarProps> = ({
         >
           <a
             className='link-underline'
-            onClick={goToMain}
+            onClick={() => menuClick(true)}
             href="#contact">
           Contact
           </a>
