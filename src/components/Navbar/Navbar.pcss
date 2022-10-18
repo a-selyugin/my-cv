@@ -4,10 +4,10 @@
 
 .header__links_desktop {
   @apply w-[400px] text-lg flex duration-300 
-  md:absolute md:-left-[136px] md:-top-[30px] 
-  md:pt-12 md:pb-2 md:w-52
+  md:absolute md:-left-[calc(100vw_-_73px)] md:-top-[30px] 
+  md:pt-12 md:pb-2 md:w-screen
   md:h-screen md:justify-start md:flex-col
-  md:border md:border-stone-400 md:rounded-md md:bg-white;
+  md:border md:border-stone-400 md:bg-white;
 }
 
 .header__links_hidden {
@@ -42,7 +42,8 @@
   @apply flex relative;
   
   & .header__submenu_content {
-    @apply w-full py-1 bg-white rounded-md border border-stone-400 invisible absolute top-full left-0 duration-300 opacity-0;
+    @apply w-full py-1 bg-white rounded-md border border-stone-400 invisible absolute top-full left-0 duration-300 opacity-0
+    md:w-1/2 md:left-1/2;
   }
 
   & .rotating-marker {
@@ -63,23 +64,24 @@
 }
 
 .burger-menu-icon {
-  @apply hidden w-6 h-4 mx-4 cursor-pointer relative md:block z-10;
+  @apply hidden w-6 h-4 mx-4 cursor-pointer relative md:block z-50;
 
   & span {
-    @apply bg-black h-[2px] absolute w-full left-0 duration-300;
+    @apply bg-black h-[2px] absolute w-full left-0 duration-300 z-50;
   }
 
   & span:first-child {
-    @apply top-0 z-10;
+    @apply top-0 z-50;
   }
 
   & span:nth-child(2) {
-    @apply top-2 z-10;
+    @apply top-2 z-50;
   }
 
   & span:last-child {
-    @apply top-4 z-10;
+    @apply top-4 z-50;
   }
+
 }
 
 .burger-menu-icon_pressed {
