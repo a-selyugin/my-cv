@@ -19,7 +19,7 @@ export const Education: FC = (): JSX.Element => (
         />
         <EducationItem
           heading='ITMO University'
-          info='BA in Automation and Control, 2008 - 2012'
+          info='BA in Control of Technical Systems, 2008 - 2012'
         />
       </div>
       <div className="education__container">
