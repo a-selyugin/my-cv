@@ -23,7 +23,12 @@ export const OnlineStoreInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
-      <span className='text-red-600'>STACK:</span> TypeScript, SASS, JEST, Webpack, Eslint.
+      <span className="text-red-600">Completed:</span> July 2022
+    </p>
+    <p
+      className='modal-content__text'
+    >
+      <span className='text-red-600'>Stack:</span> TypeScript, SASS, JEST, Webpack, Eslint.
     </p>
     <p
       className='modal-content__text'

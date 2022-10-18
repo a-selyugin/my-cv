@@ -18,7 +18,12 @@ export const VirtualKeyboardInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
-      <span className='text-red-600'>STACK:</span> HTML/CSS/JS, SASS, Webpack, Eslint, OOP.
+      <span className="text-red-600">Completed:</span> May 2022
+    </p>
+    <p
+      className='modal-content__text'
+    >
+      <span className='text-red-600'>Stack:</span> HTML/CSS/JS, SASS, Webpack, Eslint, OOP.
     </p>
     <p
       className='modal-content__text'

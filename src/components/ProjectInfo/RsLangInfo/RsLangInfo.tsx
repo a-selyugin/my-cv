@@ -31,7 +31,12 @@ export const RsLangInfo: FC = (): JSX.Element => (
     <p
       className='modal-content__text'
     >
-      <span className='text-red-600'>STACK:</span> React, TypeScript, RESTful API, Tailwind.
+      <span className="text-red-600">Completed:</span> September 2022
+    </p>
+    <p
+      className='modal-content__text'
+    >
+      <span className='text-red-600'>Stack:</span> React, TypeScript, RESTful API, Tailwind.
     </p>
     <p
       className='modal-content__text'
