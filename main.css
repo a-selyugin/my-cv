@@ -1561,6 +1561,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.body-container {
+  overflow: hidden;
+}
+
 .main-text {
   margin-left: 2.25rem;
   margin-right: 2.25rem;
