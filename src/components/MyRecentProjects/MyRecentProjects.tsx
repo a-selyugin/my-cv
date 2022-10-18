@@ -23,7 +23,7 @@ export const MyRecentProjects = ({
       imgSource: 'shelter-image',
       projectName: 'Pet shelter page',
       deployLink: 'https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/shelter/pages/main/index.html',
-      githubLink: '/',
+      githubLink: 'https://github.com/a-selyugin/shelter-copy',
       info: <ShelterInfo />,
     },
     rslang: {
@@ -37,7 +37,7 @@ export const MyRecentProjects = ({
       imgSource: 'online-store-image',
       projectName: 'Online store page',
       deployLink: 'https://rolling-scopes-school.github.io/a-selyugin-JSFE2022Q1/online-store/',
-      githubLink: '/',
+      githubLink: 'https://github.com/a-selyugin/online-store-copy',
       info: <OnlineStoreInfo />,
     },
     virtualKeyboard: {
