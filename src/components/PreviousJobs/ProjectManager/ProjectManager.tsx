@@ -52,7 +52,7 @@ export const ProjectManager: FC = (): JSX.Element => (
         <li>
         Successful management of the development of
          new product: Integrated Thruster Control System closely coupled
-          with Dynamic Positioning system and successful delivering of 2 such projects.
+          with Dynamic Positioning system and successful delivering of 2 such projects
         </li>
       </ul>
     </div>
