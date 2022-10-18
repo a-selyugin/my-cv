@@ -1,7 +1,9 @@
 import { FC } from 'react';
 
 import DiscordSVG from '@/assets/icons/discord.svg';
+import FacebookSVG from '@/assets/icons/facebook.svg';
 import GitHubSVG from '@/assets/icons/github.svg';
+import InstagramSVG from '@/assets/icons/instagram.svg';
 import LinkedinSVG from '@/assets/icons/linkedin.svg';
 import MailSVG from '@/assets/icons/mail.svg';
 import TelegramSVG from '@/assets/icons/telegram.svg';
@@ -66,6 +68,26 @@ export const Footer: FC = (): JSX.Element => (
           className='svg-fill'
         >
           <MailSVG
+            fill='white'
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/showmeartem/"
+          target='_blank'
+          rel='noreferrer'
+          className='svg-fill'
+        >
+          <InstagramSVG
+            fill='white'
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/cardboarddude"
+          target='_blank'
+          rel='noreferrer'
+          className='svg-fill'
+        >
+          <FacebookSVG
             fill='white'
           />
         </a>
