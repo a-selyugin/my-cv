@@ -19,7 +19,7 @@ export const ProductManager: FC = (): JSX.Element => (
     <p
       className='jobs__text'
     >
-      Responsibilities:
+      <p className="jobs__underline">Responsibilities:</p>
       <ul className='jobs__list'>
         <li>
           Software development planning and management

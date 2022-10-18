@@ -18,7 +18,7 @@ export const ServiceEngineer: FC = (): JSX.Element => (
     </p><p
       className='jobs__text'
     >
-      Responsibilities:
+      <p className="jobs__underline">Responsibilities:</p>
       <ul className='jobs__list'>
         <li>
         Commissioning of Dynamic Positioning Control Systems and Autopilot
@@ -41,7 +41,7 @@ export const ServiceEngineer: FC = (): JSX.Element => (
     <p
       className='jobs__text'
     >
-      Achievements:
+      <p className="jobs__underline">Achievements:</p>
       <ul className='jobs__list'>
         <li>
         More than 40 successfully commissioned projects from early 2014 to mid 2017

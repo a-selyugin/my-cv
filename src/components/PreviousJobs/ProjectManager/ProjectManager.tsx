@@ -19,7 +19,7 @@ export const ProjectManager: FC = (): JSX.Element => (
     <p
       className='jobs__text'
     >
-      Responsibilities:
+      <p className="jobs__underline">Responsibilities:</p>
       <ul className='jobs__list'>
         <li>
         Sales support
@@ -44,7 +44,7 @@ export const ProjectManager: FC = (): JSX.Element => (
     <p
       className='jobs__text'
     >
-      Achievements:
+      <p className="jobs__underline">Achievements:</p>
       <ul className='jobs__list'>
         <li>
         More then 30 successful projects

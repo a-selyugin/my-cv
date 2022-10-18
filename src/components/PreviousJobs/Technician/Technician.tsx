@@ -10,30 +10,26 @@ export const Technician: FC = (): JSX.Element => (
     <p
       className='jobs__heading'
     >
-    Product Manager - Navis Engineering Oy
-    </p><p
+    Technician - Navis Engineering Oy
+    </p>
+    <p
       className='jobs__subheading'
     >
-      May 2019 - present
-    </p><p
+      Apr 2013 - Jan 2014
+    </p>
+    <p
       className='jobs__text'
     >
-      Responsibilities:
+      <p
+        className="jobs__underline">
+        Responsibilities:
+      </p>
       <ul className='jobs__list'>
         <li>
-          Software development planning and management
+        Equipment testing
         </li>
         <li>
-          Creating of technical specifications
-        </li>
-        <li>
-          Creating of new products and features concept
-        </li>
-        <li>
-          Sales support, meeting participations witch clients on pre-sale stage.
-        </li>
-        <li>
-          Technical meetings participation on behalf of company.
+        Factory Acceptance Tests conducting under the guidance of Quality Assurance Engineer
         </li>
       </ul>
     </p>
