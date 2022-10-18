@@ -11,11 +11,13 @@ export const ServiceEngineer: FC = (): JSX.Element => (
       className='jobs__heading'
     >
       Field Service Engineer - Navis Engineering Oy
-    </p><p
+    </p>
+    <p
       className='jobs__subheading'
     >
       Jan 2014 - Jun 2017
-    </p><p
+    </p>
+    <div
       className='jobs__text'
     >
       <p className="jobs__underline">Responsibilities:</p>
@@ -37,8 +39,8 @@ export const ServiceEngineer: FC = (): JSX.Element => (
         Manuals writing and editing
         </li>
       </ul>
-    </p>
-    <p
+    </div>
+    <div
       className='jobs__text'
     >
       <p className="jobs__underline">Achievements:</p>
@@ -51,6 +53,6 @@ export const ServiceEngineer: FC = (): JSX.Element => (
            members and 3 service agents from early-to-mid 2017
         </li>
       </ul>
-    </p>
+    </div>
   </div>
 );

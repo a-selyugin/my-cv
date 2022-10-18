@@ -11,12 +11,13 @@ export const ProductManager: FC = (): JSX.Element => (
       className='jobs__heading'
     >
     Product Manager - Navis Engineering Oy
-    </p><p
+    </p>
+    <p
       className='jobs__subheading'
     >
       May 2019 - present
     </p>
-    <p
+    <div
       className='jobs__text'
     >
       <p className="jobs__underline">Responsibilities:</p>
@@ -37,6 +38,6 @@ export const ProductManager: FC = (): JSX.Element => (
           Technical meetings participation on behalf of company.
         </li>
       </ul>
-    </p>
+    </div>
   </div>
 );

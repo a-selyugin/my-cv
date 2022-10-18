@@ -16,7 +16,7 @@ export const ProjectManager: FC = (): JSX.Element => (
     >
       Jul 2017 - May 2019
     </p>
-    <p
+    <div
       className='jobs__text'
     >
       <p className="jobs__underline">Responsibilities:</p>
@@ -40,8 +40,8 @@ export const ProjectManager: FC = (): JSX.Element => (
           Keeping in touch with clients, identifying and resolving issues
         </li>
       </ul>
-    </p>
-    <p
+    </div>
+    <div
       className='jobs__text'
     >
       <p className="jobs__underline">Achievements:</p>
@@ -55,6 +55,6 @@ export const ProjectManager: FC = (): JSX.Element => (
           with Dynamic Positioning system and successful delivering of 2 such projects.
         </li>
       </ul>
-    </p>
+    </div>
   </div>
 );

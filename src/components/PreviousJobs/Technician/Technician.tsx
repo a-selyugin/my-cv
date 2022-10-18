@@ -17,7 +17,7 @@ export const Technician: FC = (): JSX.Element => (
     >
       Apr 2013 - Jan 2014
     </p>
-    <p
+    <div
       className='jobs__text'
     >
       <p
@@ -32,6 +32,6 @@ export const Technician: FC = (): JSX.Element => (
         Factory Acceptance Tests conducting under the guidance of Quality Assurance Engineer
         </li>
       </ul>
-    </p>
+    </div>
   </div>
 );
