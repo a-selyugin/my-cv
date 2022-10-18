@@ -1,5 +1,6 @@
-import { useScrollLock } from '@/hooks/useScrollLock/useScrollLock';
 import { FC, useState } from 'react';
+
+import { useScrollLock } from '@/hooks/useScrollLock/useScrollLock';
 
 import './Navbar.pcss';
 
