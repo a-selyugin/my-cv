@@ -4,7 +4,9 @@ import './Technician.pcss';
 
 export const Technician: FC = (): JSX.Element => (
 
-  <>
+  <div
+    className='jobs'
+  >
     <p
       className='jobs__heading'
     >
@@ -35,5 +37,5 @@ export const Technician: FC = (): JSX.Element => (
         </li>
       </ul>
     </p>
-  </>
+  </div>
 );

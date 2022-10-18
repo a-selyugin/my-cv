@@ -4,7 +4,9 @@ import './ServiceEngineer.pcss';
 
 export const ServiceEngineer: FC = (): JSX.Element => (
 
-  <>
+  <div
+    className='jobs'
+  >
     <p
       className='jobs__heading'
     >
@@ -35,5 +37,5 @@ export const ServiceEngineer: FC = (): JSX.Element => (
         </li>
       </ul>
     </p>
-  </>
+  </div>
 );
