@@ -1,3 +1,4 @@
+import { useScrollLock } from '@/hooks/useScrollLock/useScrollLock';
 import { FC, useState } from 'react';
 
 import './Navbar.pcss';
@@ -13,6 +14,14 @@ export const Navbar: FC<NavbarProps> = ({
 }): JSX.Element => {
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  if (isMenuOpen) {
+    lockScroll();
+  }
+  else {
+    unlockScroll();
+  }
 
   const menuClick = (isGoToMain: boolean) => {
     setIsMenuOpen(!isMenuOpen);
