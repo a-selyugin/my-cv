@@ -3,7 +3,9 @@ import { FC } from 'react';
 import './PreviousJobs.pcss';
 
 export const PreviousJobs: FC = (): JSX.Element => (
-  <div>
+  <section
+    className='wrapper'
+  >
     <h3
       className='modal-content__heading'
     >
@@ -21,5 +23,5 @@ export const PreviousJobs: FC = (): JSX.Element => (
        website consist of two pages and includes simple things like sliders and burger menu.
         The trick was to make slider on main page working as infinite shuffle.
     </p>
-  </div>
+  </section>
 );
