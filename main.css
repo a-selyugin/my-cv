@@ -1580,7 +1580,7 @@ video {
 }
 
 .body-container {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main-text {
