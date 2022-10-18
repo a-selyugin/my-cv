@@ -17,7 +17,7 @@ export const Navbar: FC<NavbarProps> = ({
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { lockScroll, unlockScroll } = useScrollLock();
 
-  if (isMenuOpen) {
+  if (isMenuOpen) { // TODO make check for window resize
     lockScroll();
   }
   else {
