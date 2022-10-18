@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 
 import './Navbar.pcss';
 
@@ -10,82 +10,93 @@ interface NavbarProps {
 export const Navbar: FC<NavbarProps> = ({
   goToMain,
   escapeMain,
-}): JSX.Element => (
+}): JSX.Element => {
 
-  <nav>
-    <ul
-      className='header__links_desktop'>
-      <li
-        className='header__submenu header__link-wrapper'
-      >
-        <div
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  return (
+
+    <nav
+      className='nav-container'
+    >
+      <ul
+        className={!isMenuOpen ? 'header__links_desktop header__links_hidden' : 'header__links_desktop'}>
+        <li
+          className='header__submenu header__link-wrapper'
+        >
+          <div
+            className='header__link-wrapper'
+          >
+          Experience
+            <span className='rotating-marker'>▲</span>
+          </div>
+          <div className="header__submenu_content header__link-wrapper">
+            <ul>
+              <li
+                className='header__link-wrapper'
+              >
+                <a
+                  className='link-underline'
+                  onClick={escapeMain}
+                  href="#jobs"
+                >
+              Jobs
+                </a>
+              </li>
+              <li
+                className='header__link-wrapper'
+              >
+                <a
+                  className='link-underline'
+                  onClick={goToMain}
+                  href="#experience">
+                  Recent projects
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li
           className='header__link-wrapper'
         >
-          Experience
-          <span className='rotating-marker' />
-        </div>
-        <div className="header__submenu_content header__link-wrapper">
-          <ul>
-            <li
-              className='header__link-wrapper'
-            >
-              <a
-                className='link-underline'
-                onClick={escapeMain}
-                href="/#"
-              >
-              Jobs
-              </a>
-            </li>
-            <li
-              className='header__link-wrapper'
-            >
-              <a
-                className='link-underline'
-                onClick={goToMain}
-                href="/#experience">
-                  Recent projects
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li
-        className='header__link-wrapper'
-      >
-        <a
-          className='link-underline'
-          onClick={goToMain}
-          href="/#education">
+          <a
+            className='link-underline'
+            onClick={goToMain}
+            href="#education">
           Education
-        </a>
-      </li>
-      <li
-        className='header__link-wrapper'
-      >
-        <a
-          className='link-underline'
-          onClick={goToMain}
-          href="/#skills">
+          </a>
+        </li>
+        <li
+          className='header__link-wrapper'
+        >
+          <a
+            className='link-underline'
+            onClick={goToMain}
+            href="#skills">
           Skills
-        </a>
-      </li>
-      <li
-        className='header__link-wrapper'
-      >
-        <a
-          className='link-underline'
-          onClick={goToMain}
-          href="/#contact">
+          </a>
+        </li>
+        <li
+          className='header__link-wrapper'
+        >
+          <a
+            className='link-underline'
+            onClick={goToMain}
+            href="#contact">
           Contact
-        </a>
-      </li>
-    </ul>
+          </a>
+        </li>
+      </ul>
 
-    <div
-      className='header__links_mobile'
-    >
-      Burger
-    </div>
-  </nav>
-);
+      <button
+        type='button'
+        className={isMenuOpen ? 'burger-menu-icon burger-menu-icon_pressed': 'burger-menu-icon'}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+    </nav>
+  );
+};
