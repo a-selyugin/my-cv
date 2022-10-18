@@ -34,7 +34,7 @@ export const Navbar: FC<NavbarProps> = ({
                 onClick={escapeMain}
                 href="/#"
               >
-              Previous jobs
+              Jobs
               </a>
             </li>
             <li
