@@ -692,6 +692,63 @@
 
     margin-bottom: 0.5rem
 }
+.download-cv {
+
+    display: flex;
+
+    justify-content: center
+}
+
+.button-container {
+
+    margin-top: 2.5rem;
+
+    margin-bottom: 2.5rem
+}
+
+.fake-button {
+
+    display: block;
+
+    width: 11rem;
+
+    border-radius: 9999px;
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+
+    padding-top: 0.5rem;
+
+    padding-bottom: 0.5rem;
+
+    padding-left: 0.5rem;
+
+    padding-right: 0.5rem;
+
+    text-align: center;
+
+    font-size: 1.125rem;
+
+    line-height: 1.75rem;
+
+    --tw-text-opacity: 1;
+
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+
+    transition-duration: 300ms
+}
+
+.fake-button:hover {
+
+    --tw-translate-y: -0.25rem;
+
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgba(153, 27, 27, var(--tw-bg-opacity))
+}
 .jobs {
   margin-bottom: 4rem;
 }
