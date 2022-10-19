@@ -5,8 +5,10 @@ import './MainPage.pcss';
 import { AboutMe } from '../../components/AboutMe/index';
 import { Education } from '../../components/Education/index';
 import { ModalWindow } from '../../components/ModalWindow/ModalWindow';
-import { MyRecentProjects } from '../../components/MyRecentProjects/index';
+import { MyRecentProjects } from '../../components/MyRecentProjects';
 import { Skills } from '../../components/Skills/index';
+
+import { DownloadCV } from '@/components/DownloadCV/DownloadCV';
 
 export const MainPage: FC = (): JSX.Element => {
 
@@ -28,6 +30,7 @@ export const MainPage: FC = (): JSX.Element => {
       />
       <Education />
       <Skills />
+      <DownloadCV />
       <ModalWindow
         active={modalActive}
         setActive={setModalActive}
