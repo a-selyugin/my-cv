@@ -23,7 +23,7 @@ export const AboutMe: FC = (): JSX.Element => (
       <div>
         <p className='main-text'>Hello, I am <span className="text-red-600">Artem</span>, and I’m looking for a job as a <span className="text-red-600">front-end developer</span>. </p>
         <p className='main-text'>Working as a product manager for the last 3 years I discovered my passion to User Interfaces and User Expierience. My urge to learn different UI approaches led me to the front-end development.</p>
-        <p className='main-text'>I also have a experience in product design, project management and customer care.</p>
+        <p className='main-text'>I also have an experience in product design, project management and customer care.</p>
       </div>
     </div>
   </section>
